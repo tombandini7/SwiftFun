@@ -5,18 +5,26 @@
 //  Created by Tom Bandini on 6/5/18.
 //  Copyright © 2018 Tom Bandini. All rights reserved.
 //
-// Hello, I like Cheese
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    var buttonCount = 0
+
+    // Button Count changes with taps
+   // var buttonCount = 0
     @IBOutlet weak var myLabel: UILabel!
-    
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
-        buttonCount = buttonCount + 1
+        
+    let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+    
+        /*
+        buttonCount += 1
         
         print(buttonCount)
         
@@ -33,12 +41,12 @@ class ViewController: UIViewController {
         
             if buttonCount >= 17 {
         view.backgroundColor = UIColor.green
-            
+ */
         }
         
     }
     
-    
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,7 +59,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-}
+*/
 

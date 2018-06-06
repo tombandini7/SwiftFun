@@ -31,18 +31,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vs9-ie-ZEq"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ZO-at-sjN">
+                                <rect key="frame" x="157.66666666666666" y="302.66666666666669" width="99.999999999999972" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Rn9-HQ-EnL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAq-bW-lnF">
+                                <rect key="frame" x="157.66666666666666" y="242.66666666666663" width="99.999999999999972" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hqd-64-XOx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D7N-hJ-RyP" firstAttribute="top" secondItem="4gB-sF-eIB" secondAttribute="bottom" constant="10" id="L8P-Ge-2L9"/>
+                            <constraint firstItem="DAq-bW-lnF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OAc-to-oeC"/>
                             <constraint firstItem="4gB-sF-eIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oav-eN-qdZ"/>
+                            <constraint firstItem="3ZO-at-sjN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3b-dg-j7n"/>
+                            <constraint firstItem="4gB-sF-eIB" firstAttribute="top" secondItem="3ZO-at-sjN" secondAttribute="bottom" constant="25" id="bX6-sr-FTm"/>
                             <constraint firstItem="4gB-sF-eIB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n4g-AO-yIr"/>
+                            <constraint firstItem="3ZO-at-sjN" firstAttribute="top" secondItem="DAq-bW-lnF" secondAttribute="bottom" constant="30" id="sJL-wQ-KDh"/>
                             <constraint firstItem="D7N-hJ-RyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w8z-dz-dta"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="3ZO-at-sjN" id="Zjs-cG-iuG"/>
                         <outlet property="myLabel" destination="4gB-sF-eIB" id="6o6-1o-41e"/>
+                        <outlet property="topTextField" destination="DAq-bW-lnF" id="FxC-gg-0nb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
