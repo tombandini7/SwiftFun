@@ -49,9 +49,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYN-c2-tih">
+                                <rect key="frame" x="183" y="188" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GYN-c2-tih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUm-wO-XDJ"/>
                             <constraint firstItem="D7N-hJ-RyP" firstAttribute="top" secondItem="4gB-sF-eIB" secondAttribute="bottom" constant="10" id="L8P-Ge-2L9"/>
                             <constraint firstItem="DAq-bW-lnF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OAc-to-oeC"/>
                             <constraint firstItem="4gB-sF-eIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oav-eN-qdZ"/>
@@ -60,10 +64,12 @@
                             <constraint firstItem="4gB-sF-eIB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n4g-AO-yIr"/>
                             <constraint firstItem="3ZO-at-sjN" firstAttribute="top" secondItem="DAq-bW-lnF" secondAttribute="bottom" constant="30" id="sJL-wQ-KDh"/>
                             <constraint firstItem="D7N-hJ-RyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w8z-dz-dta"/>
+                            <constraint firstItem="DAq-bW-lnF" firstAttribute="top" secondItem="GYN-c2-tih" secondAttribute="bottom" constant="28.666666666666629" id="wUA-6p-qfG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="GYN-c2-tih" id="cV5-vy-9Ks"/>
                         <outlet property="bottomTextField" destination="3ZO-at-sjN" id="Zjs-cG-iuG"/>
                         <outlet property="myLabel" destination="4gB-sF-eIB" id="6o6-1o-41e"/>
                         <outlet property="topTextField" destination="DAq-bW-lnF" id="FxC-gg-0nb"/>
